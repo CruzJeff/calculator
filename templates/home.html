@@ -1,0 +1,54 @@
+{% load staticfiles %}
+
+<html>
+	<head>
+		<title> Settlement Calculator </title>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="{% static 'css\\home.css' %}">
+
+
+</head>
+
+	   <div class="page-header">
+ 		       <h1><a href="{% url 'settled' %}"> Settlement Calculator </a></h1>
+           <h4> If Settling Today </h4>
+  	 </div>
+<body>
+<div class="calculator">
+
+<form action="{% url 'calculator' %}">
+  <b > Amount at Issue:  $ </b>      <input type="number" step = "0.01" name='Amount'/> 
+  <br />
+  
+  <b ;> Date Summons and Complaint Filed: </b> <input type="date" name='Date Summons and Complaint Filed'/>
+  <br />
+
+  <h3><a href="/"> Terms of Settlement(Percentage) </a></h3>
+
+ <b > Principal: </b> <input type="number" step = "0.01" name='Principal'/> <b > % </b>
+  <br />
+  <br />
+  <b > Interest: </b> <input type="number" step = "0.01" name='Interest'/>  <b> % </b>
+  <br />
+  <br />
+  <br />
+
+  <input type="submit" value="Enter" />
+  <br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<a href ="{% url 'about' %}">About</a>
+
+</form>
+</div>
+</body>
+</html>
+

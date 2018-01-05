@@ -1,0 +1,41 @@
+{% load staticfiles %}
+
+<html>
+	<head>
+		<title> Settlement Calculator </title>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="{% static 'css\\calculator.css' %}">
+
+
+	   		<div class="page-header">
+ 		       			<h1><a href='/'> Settlement Calculator </a></h1>
+  	 		</div>
+  	</head>
+ <body>
+ 	<div class="results">
+	<h3>If Calculated from Settled Amount</h3>
+	<b >Principal:     $ {{ PrincipalOut }}</b>
+	<br />
+	<br />
+	<b >Interest:       $ {{InterestSettledAmount}}</b>
+	<br />
+	<br />
+	<b>Attorneys' Fees:      $ {{Attorney_Fee_Settled}} </b>
+	<br />
+	<br />
+	<b >Costs:  Ask Plaintiff </b>
+	<br />
+	<br />
+	<h3>If Calculated from Amount at Issue</h3>
+	<b > Interest:  $ {{InterestAmountAtIssue}} </b>
+	<br />
+	<br />
+	<b > Attorneys' Fees:  $ {{Attorney_Fee_AAI}} </b>
+	<br />
+	<br />
+
+	<a href = "{% url 'home' %}"> New Calculation </a>
+	</div>
+</body>

@@ -1,0 +1,37 @@
+{% load staticfiles %}
+
+
+<html>
+<header>
+	<title> Settlement Calculator </title>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="{% static 'css\\about.css' %}">
+<div class="page-header">
+ 		       <h1><a href="/"> About Page </a> </h1>
+  	 </div>
+
+</header>
+<body>
+	<div class="about">
+<h3> About Page </h3>
+Web app for calculating settlements. 
+
+<br />
+<br />
+
+Made with Django
+
+<br />
+<br />
+
+Jeffrey Cruz/2018
+<br />
+<br />
+<br />
+<br />
+	</div>
+</body>
+<a href = "{% url 'home' %}"> Calculator </a>
+</html>
