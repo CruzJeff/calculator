@@ -19,21 +19,21 @@
 <div class="calculator">
 
 <form action="{% url 'calculator' %}">
-  <b > Amount at Issue:  $ </b>      <input type="number" min = "0" step = "0.01" name='Amount'/> 
+  <b > Amount at Issue:  $ </b>      <input type="number" min = "0" step = "0.01" name='Amount' required/> 
   <br />
   
-  <b ;> Date Summons and Complaint Filed: </b> <input type="date" name='Date Summons and Complaint Filed'/>
+  <b ;> Date Summons and Complaint Filed: </b> <input type="date" name='Date Summons and Complaint Filed' required/>
   <br />
 
 
-  <b ;> Date Settled: </b> <input type="date" name='Date Settled'/>
+  <b ;> Date Settled: </b> <input type="date" name='Date Settled' required/>
 
   <h3><a href="/settled"> Terms of Settlement(Percentage) </a></h3>
 
- <b > Principal: </b> <input type="number" min = "0" step = "0.01" name='Principal'/> <b > % </b>
+ <b > Principal: </b> <input type="number" min = "0" step = "0.01" name='Principal' required/> <b > % </b>
   <br />
   <br />
-  <b > Interest: </b> <input type="number" min = "0" step = "0.01" name='Interest'/>  <b> % </b>
+  <b > Interest: </b> <input type="number" min = "0" step = "0.01" name='Interest'/ required>  <b> % </b>
   <br />
   <br />
   <br />
@@ -44,4 +44,3 @@
 </div>
 </body>
 </html>
-
