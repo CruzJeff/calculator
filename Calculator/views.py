@@ -18,6 +18,8 @@ def calculator(request):
     Date_Original = Date_Original.split('-')
     Date_Original = [int(x) for x in Date_Original]
     DSCF = date(Date_Original[0],Date_Original[1],Date_Original[2])
+    
+    #IF calculating from a past date
     if 'Date Settled' in request.GET:
         Date_Settled = request.GET['Date Settled']
         Date_Settled = Date_Settled.split('-')
@@ -30,7 +32,8 @@ def calculator(request):
     Principal = float(request.GET['Principal'])/100
     Interest = float(request.GET['Interest'])/100
     #Variables
-    Var = 0.02/30
+    Var = 0.002  #Multiplier
+    
     if Settled:
         DiffDates = diff_dates(Date_Settled,DSCF)
     else:
