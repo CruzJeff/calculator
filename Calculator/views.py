@@ -32,7 +32,7 @@ def calculator(request):
     Principal = float(request.GET['Principal'])/100
     Interest = float(request.GET['Interest'])/100
     #Variables
-    Var = 0.002  #Multiplier
+    Var = 0.02/30
     
     if Settled:
         DiffDates = diff_dates(Date_Settled,DSCF)
