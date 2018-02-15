@@ -46,7 +46,7 @@ def calculator(request):
 
     #Calculated from Amount at Issue
     InterestAmountAtIssue = round((DiffDates * Var * Amount_At_Issue) * Interest,2)
-    Attorney_Fee_AAI = round((Amount_At_Issue + InterestAmountAtIssue)/5,2)
+    Attorney_Fee_AAI = round((PrincipalOut + InterestAmountAtIssue)/5,2)
 
     return render(request, 'calculator.html', {'PrincipalOut':PrincipalOut, 'InterestSettledAmount':InterestSettledAmount, 
         'Attorney_Fee_Settled': Attorney_Fee_Settled, 'InterestAmountAtIssue':InterestAmountAtIssue, 
