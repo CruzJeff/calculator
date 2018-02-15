@@ -22,7 +22,7 @@ TEST_RUNNER = 'testing.DatabaselessTestRunner'
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = KEY
+SECRET_KEY = l0j!90f(p+vfjwm2r$11yg9n&bgu5gcr@uy3&8ikc_nxz7z0la
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
